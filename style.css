@@ -5,6 +5,7 @@ body {
 	font-size: 18px;
 	color: var(--tg-theme-text-color);
 	background: var(--tg-theme-bg-color);
+	overflow: hidden;
 }
 
 .container {
@@ -57,7 +58,7 @@ body {
 
 .scrollY {
 	width: 100vw; /* ширина нашего блока */
-	height: 500px;
+	height: 700px;
 	background: #fff; /* цвет фона, белый */
 	border: 1px solid #C1C1C1; /* размер и цвет границы блока */
 	overflow-y: scroll;
@@ -72,8 +73,9 @@ body {
 }
 
 .form {
-	align-content: center;
-	width: 100vw;
+	width: 60vw;
+    border: 1px solid red;
+    margin: auto;
 }
 
 /*
