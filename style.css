@@ -90,7 +90,7 @@ input{
 }
 
 .main_search {
-	width: 95%;
+	width: 90vw;
     height: 50px;
     background: #2b303b;
     border: none;
@@ -118,7 +118,7 @@ input{
 }
 
 #cancelButton {
-	width: 10vw;
+	width: 20vw;
   	height: 50px;
  	border: 0;
   	background: rgba(0, 0, 0, 0);
