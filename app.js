@@ -90,7 +90,7 @@ ${tg.initDataUnsafe.user.last_name}`
 usercard.appendChild(p);
 
 async function showButton(){
-	document.getElementById('form_test').style.width = "80%";
+	document.getElementById('form_test').style.width = "70%";
 	await sleep(250);
 	document.getElementById('cancelButton').hidden = false;
 };
