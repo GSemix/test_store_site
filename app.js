@@ -14,6 +14,8 @@ let btn4 = document.getElementById("btn4");
 let btn5 = document.getElementById("btn5");
 let btn6 = document.getElementById("btn6");
 
+
+
 btn1.addEventListener("click", function(){
 	if (tg.mainButton.isVisible) {
 		tg.mainButton.hide();
@@ -86,6 +88,21 @@ p.innerText = `${tg.initDataUnsafe.user.first_name}
 ${tg.initDataUnsafe.user.last_name}`
 
 usercard.appendChild(p);
+
+async function showButton(){
+	document.getElementById('form_test').style.width = "80%";
+	await sleep(250);
+	document.getElementById('cancelButton').hidden = false;
+};
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+};
+
+function cancelButtonPressed() {
+	document.getElementById('form_test').style.width = "95%"
+	document.getElementById('cancelButton').hidden = true;
+};
 
 
 
