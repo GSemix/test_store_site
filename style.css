@@ -56,7 +56,8 @@ body {
 }
 
 .scrollY {
-	height: 500px;
+	width: 100%; /* ширина нашего блока */
+	height: 100%;
 	background: #fff; /* цвет фона, белый */
 	border: 1px solid #C1C1C1; /* размер и цвет границы блока */
 	overflow-y: scroll;
