@@ -90,8 +90,8 @@ ${tg.initDataUnsafe.user.last_name}`
 usercard.appendChild(p);
 
 async function showButton(){
-	document.getElementById('form_test').style.width = "70%";
-	await sleep(250);
+	document.getElementById('form_test').style.width = "70vw";
+	await sleep(350);
 	document.getElementById('cancelButton').hidden = false;
 };
 
@@ -100,7 +100,7 @@ function sleep(ms) {
 };
 
 function cancelButtonPressed() {
-	document.getElementById('form_test').style.width = "95%"
+	document.getElementById('form_test').style.width = "90vw"
 	document.getElementById('cancelButton').hidden = true;
 };
 
