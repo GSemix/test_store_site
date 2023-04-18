@@ -10,8 +10,9 @@
 	<div class="div_form">
 		<form class="form">
 		   	<p>
-		   		<input type="search" id="form_test" name="q" class="main_search" placeholder="Поиск по сайту"> 
-		   		<input type="submit" id="form_test_button" class="main_submit" value="Найти">
+		   		<input type="search" onclick="showButton();" id="form_test" name="q" class="main_search" placeholder="Поиск по сайту"> 
+		   		<input type="button" id="cancelButton" onclick="cancelButtonPressed();" hidden="true" value="Отмена">
+		   		<!--<input type="submit" onclick="document.getElementById('main_submit').color('#DDDDDD');" id="form_test_button" class="main_submit" hidden="true" value="Найти">-->
 		   	</p>
 	  	</form>
   	</div>
