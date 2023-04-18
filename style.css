@@ -118,7 +118,7 @@ input{
 }
 
 #cancelButton {
-	width: 70px;
+	width: 10vw;
   	height: 50px;
  	border: 0;
   	background: rgba(0, 0, 0, 0);
