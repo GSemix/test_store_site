@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-	max-width: 390px;
+	max-width: 100vw;
 	margin-top: 20px;
 }
 
@@ -56,17 +56,16 @@ body {
 }
 
 .scrollY {
-	width: 450px; /* ширина нашего блока */
-	height: 700px;
+	width: 100vw; /* ширина нашего блока */
+	height: 500px;
 	background: #fff; /* цвет фона, белый */
 	border: 1px solid #C1C1C1; /* размер и цвет границы блока */
 	overflow-y: scroll;
 	overflow-x: hidden;
-	vertical-align: middle;
 }
 
 .scrollX {
-	width: 390px; /* ширина нашего блока */
+	width: 100vw; /* ширина нашего блока */
 	background: #fff; /* цвет фона, белый */
 	border: 1px solid #C1C1C1; /* размер и цвет границы блока */
 	overflow-x: scroll;
@@ -74,7 +73,7 @@ body {
 
 .form {
 	align-content: center;
-	width: 390px;
+	width: 100vw;
 }
 
 /*
