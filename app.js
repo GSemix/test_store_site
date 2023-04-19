@@ -104,6 +104,10 @@ function cancelButtonPressed() {
 	document.getElementById('cancelButton').hidden = true;
 };
 
+function toItemPage() {
+	window.location.href = "catalog_item.html";
+}
+
 
 
 
