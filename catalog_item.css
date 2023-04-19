@@ -18,7 +18,7 @@ body {
 	height: 10vh;
  	border: 0;
   	background: rgba(0, 0, 0, 0);
-	color: white;
+	color: var(--tg-theme-text-color);
 	font-size: 40pt;
 }
 
