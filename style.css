@@ -9,8 +9,8 @@ body {
 }
 
 .container {
-	max-width: 100vw;
-	margin-top: 5px;
+	width: 100vw;
+	margin-top: 10px;
 }
 
 .innerX {
@@ -24,8 +24,12 @@ body {
 
 .innerY {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 200px 200px 200px;
+	width: 90vw;
+	grid-template-columns: 1fr auto;
+    grid-template-rows:auto 200px;
+    grid-column-gap: 20px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .img {
@@ -34,6 +38,7 @@ body {
 
 .item {
 	text-align: center;
+	padding-bottom: 10px;
 }
 
 .btn {
@@ -81,7 +86,7 @@ body {
     margin-right: auto;
 }
 
-input{
+input {
   padding:4px 10px;
   font-size:16px;
   -webkit-border-radius: 5px;
@@ -109,7 +114,7 @@ input{
   background: rgba(0, 0, 0, 0);
   color:red;
   margin-bottom: auto;
-  margin-bottom: auto;
+  margin-top: auto;
 }
 
 .div_form {
@@ -124,10 +129,26 @@ input{
   	background: rgba(0, 0, 0, 0);
 	color:darkred;
 	margin-bottom: auto;
-	margin-bottom: auto;
+	margin-top: auto;
 
 	transition: all;
     transition-duration: 0.35s;
+}
+
+#salesTitle {
+	padding-left: 10px;
+}
+
+#catalogTitle {
+	padding-left: 10px;
+}
+
+.item_catalog {
+	padding-bottom: 15px;
+}
+
+.img_catalog {
+	width: 40vw;
 }
 
 /*
