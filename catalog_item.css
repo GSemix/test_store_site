@@ -9,8 +9,8 @@ body {
 
 .buttons {
 	width: auto;
-	height: 10vh;;
-	background: black;
+	height: 10vh;
+	background-color: var(--tg-theme-bg-color)
 }
 
 #backButton {
