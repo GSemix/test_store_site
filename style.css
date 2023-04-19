@@ -15,32 +15,36 @@ body {
 
 .innerX {
 	display: grid;
-	margin-left: 16px;
-	margin-right: 16px;
+	height: 20vh;
 	grid-gap: 16px;
 	grid-template-columns: repeat(4, 1fr);
 	grid-auto-flow: column;
+	margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
 }
 
 .innerY {
 	display: grid;
 	width: 90vw;
-	height: 100vw;
+	grid-gap: 16px;
 	grid-template-columns: repeat(2, 1fr); 
 	grid-auto-flow: row;
-	grid-column-gap: 10px;
-    margin-right: auto;
+	margin-right: auto;
     margin-left: auto;
     margin-bottom: auto;
 }
 
 .img {
 	width: 150px;
+	border-radius: 10px;
 }
 
 .item {
 	text-align: center;
 	padding-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .btn {
@@ -65,7 +69,7 @@ body {
 
 .scrollY {
 	width: 100vw;
-	max-height:auto;
+	height: 90vh;
 	background: #fff;
 	overflow-y: scroll;
 	overflow-x: hidden;
@@ -73,14 +77,15 @@ body {
 
 .scrollX {
 	width: 100vw;
+	height: 20vh;
 	background: #fff;
 	overflow-x: scroll;
-	padding-bottom: 15px;
+	overflow-y: hidden;
 }
 
 .form {
 	width: 90vw;
-	height: 80px;
+	height: 10vh;
     margin: auto;
     margin-bottom: auto;
     margin-top: auto;
@@ -148,11 +153,13 @@ input {
 }
 
 .item_catalog {
-	padding-bottom: 15px;
+	padding-bottom: 30px;
 }
 
 .img_catalog {
+	height: 20vh;
 	width: 40vw;
+	border-radius: 10px;
 }
 
 /*
