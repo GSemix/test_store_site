@@ -16,7 +16,6 @@ body {
 .innerX {
 	display: grid;
 	height: 20vh;
-	grid-gap: 16px;
 	grid-template-columns: repeat(4, 1fr);
 	grid-auto-flow: column;
 	margin-right: auto;
@@ -26,13 +25,11 @@ body {
 
 .innerY {
 	display: grid;
-	width: 90vw;
+	width: auto;
 	grid-gap: 16px;
 	grid-template-columns: repeat(2, 1fr); 
 	grid-auto-flow: row;
-	margin-right: auto;
-    margin-left: auto;
-    margin-bottom: auto;
+	justify-items: center;
 }
 
 .img {
@@ -42,7 +39,7 @@ body {
 
 .item {
 	text-align: center;
-	padding-bottom: 10px;
+	padding-bottom: 15px;
 	padding-left: 15px;
 	padding-right: 15px;
 }
