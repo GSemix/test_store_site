@@ -1,88 +1,164 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
-	<title>Document</title>
-</head>
-<body>
-	<div class="div_form">
-		<form class="form">
-		   	<p>
-		   		<input type="search" onclick="showButton();" id="form_test" name="q" class="main_search" placeholder="Поиск по сайту"> 
-		   		<input type="button" id="cancelButton" onclick="cancelButtonPressed();" hidden="true" value="Отмена">
-		   		<!--<input type="submit" onclick="document.getElementById('main_submit').color('#DDDDDD');" id="form_test_button" class="main_submit" hidden="true" value="Найти">-->
-		   	</p>
-	  	</form>
-  	</div>
+body {
+	margin: 0;
+	margin-top: 20px;
+	padding: 0;
+	font-size: 18px;
+	color: var(--tg-theme-text-color);
+	background: var(--tg-theme-bg-color);
+	overflow: hidden;
+}
 
+.container {
+	width: 100vw;
+	margin-top: 10px;
+}
 
-  	<div class="scrollY">
-		<h2 id="salesTitle">Акции</h2>
-		<div class="scrollX">
-			<div class="container">
-				<div class="innerX">
-					<div class="item">
-						<img src="photo.jpg" alt="Some" class="img">
-						<button class="btn" id="btn1">Add</button>
-					</div>
-					<div class="item">
-						<img src="photo.jpg" alt="Some" class="img">
-						<button class="btn" id="btn2">Add</button>
-					</div>
-					<div class="item">
-						<img src="photo.jpg" alt="Some" class="img">
-						<button class="btn" id="btn3">Add</button>
-					</div>
-					<div class="item">
-						<img src="photo.jpg" alt="Some" class="img">
-						<button class="btn" id="btn4">Add</button>
-					</div>
-					<div class="item">
-						<img src="photo.jpg" alt="Some" class="img">
-						<button class="btn" id="btn5">Add</button>
-					</div>
-					<div class="item">
-						<img src="photo.jpg" alt="Some" class="img">
-						<button class="btn" id="btn6">Add</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<h2 id="catalogTitle">Каталог</h2>
-		<div class="container">
-			<div class="innerY">
-				<div class="item_catalog">
-					<img src="photo1.jpg" alt="Some" class="img_catalog">
-				</div>
-				<div class="item_catalog">
-					<img src="photo1.jpg" alt="Some" class="img_catalog">
-				</div>
-				<div class="item_catalog">
-					<img src="photo1.jpg" alt="Some" class="img_catalog">
-				</div>
-				<div class="item_catalog">
-					<img src="photo1.jpg" alt="Some" class="img_catalog">
-				</div>
-				<div class="item_catalog">
-					<img src="photo1.jpg" alt="Some" class="img_catalog">
-				</div>
-				<div class="item_catalog">
-					<img src="photo1.jpg" alt="Some" class="img_catalog">
-				</div>
-				<div class="item_catalog">
-					<img src="photo1.jpg" alt="Some" class="img_catalog">
-				</div>
-				<div class="item_catalog">
-					<img src="photo1.jpg" alt="Some" class="img_catalog">
-				</div>
-			</div>
-		</div>
-		<div class="usercard" id="usercard"></div>
-  	</div>
+.innerX {
+	display: grid;
+	margin-left: 16px;
+	margin-right: 16px;
+	grid-gap: 16px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-flow: column;
+}
 
-	<script src="https://telegram.org/js/telegram-web-app.js"></script>
-	<script src="app.js"></script>
-</body>
-</html>
+.innerY {
+	display: grid;
+	width: 90vw;
+	height: auto;
+	grid-template-columns: repeat(2, 1fr); 
+	grid-auto-flow: row;
+	grid-column-gap: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.img {
+	width: 150px;
+}
+
+.item {
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px 20px;
+	border: none;
+	background: rgb(248, 168, 24);
+	border-radius: 10px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	transition: background .2s linear;
+}
+
+.btn:hover {
+	background: lightgreen;
+}
+
+.usercard {
+	text-align: center;
+}
+
+.scrollY {
+	width: 100vw;
+	height: 700px;
+	background: #fff;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.scrollX {
+	width: 100vw;
+	background: #fff;
+	overflow-x: scroll;
+	padding-bottom: 15px;
+}
+
+.form {
+	width: 90vw;
+	height: 80px;
+    margin: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+  padding:4px 10px;
+  font-size:16px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.main_search {
+	width: 90vw;
+    height: 50px;
+    background: #2b303b;
+    border: none;
+    float: left;
+    color: #63717f;
+    text-indent: 10px;
+    color: var(--tg-theme-text-color);
+    transition: all;
+    transition-duration: 0.35s;
+
+}
+.main_submit {
+  width: 70px;
+  height: 50px;
+  border: 0;
+  background: rgba(0, 0, 0, 0);
+  color:red;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.div_form {
+	margin-bottom: auto;
+	background-color: var(--tg-theme-bg-color);
+}
+
+#cancelButton {
+	width: 20vw;
+  	height: 50px;
+ 	border: 0;
+  	background: rgba(0, 0, 0, 0);
+	color:darkred;
+	margin-bottom: auto;
+	margin-top: auto;
+
+	transition: all;
+    transition-duration: 0.35s;
+}
+
+#salesTitle {
+	padding-left: 10px;
+	color:black;
+}
+
+#catalogTitle {
+	padding-left: 10px;
+	color:black;
+}
+
+.item_catalog {
+	padding-bottom: 15px;
+}
+
+.img_catalog {
+	width: 45vw;
+}
+
+/*
+var(--tg-theme-bg-color)
+var(--tg-theme-text-color)
+var(--tg-theme-hint-color)
+var(--tg-theme-link-color)
+var(--tg-theme-button-color)
+var(--tg-theme-button-text-color)
+*/
