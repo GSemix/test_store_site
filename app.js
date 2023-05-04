@@ -106,7 +106,11 @@ function cancelButtonPressed() {
 
 function toItemPage() {
 	window.location.href = "catalog_item.html";
-}
+};
+
+function myFunction() {
+	alert(123);
+};
 
 
 
